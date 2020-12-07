@@ -8,7 +8,7 @@ This  is a PyTorch implementation of our model for weakly supervised semantic se
 
 The training experiments are conducted using PyTorch 1.4.0 with four NVIDIA RTX 2080Ti GPU with 11GB memory per card.
 
-+ Please install PyTorch 1.4.0
++ Install PyTorch 1.4.0
 
 Other minor Python modules can be installed by running
 
@@ -19,11 +19,14 @@ pip install -r requirements.txt
 ## Train
 
 ### Clone
-+ ```git clone -- recursive https://github.com/Lixy1997/Group-WSSS```
+
+```git clone -- recursive https://github.com/Lixy1997/Group-WSSS```
 
 ### Download Dataset
 
-+ Please download the [PASCAL VOC 2012](https://drive.google.com/file/d/1uh5bWXvLOpE-WZUUtO77uwCB4Qnh6d7X/view) dataset.
+In the paper, we use the most popular dataset for training. Here are the steps to prepare the data:
+
++ Download the [PASCAL VOC 2012](https://drive.google.com/file/d/1uh5bWXvLOpE-WZUUtO77uwCB4Qnh6d7X/view) dataset.
 
 + Create soft links:
 
@@ -31,7 +34,7 @@ pip install -r requirements.txt
 
 ### Train the Group-Wise Semantic Mining Network
 
-First, Once the data is prepared, please run ```python train.py``` for training the classification network with our default parameters.
+1. Once the data is prepared, please run ```python train.py``` for training the classification network with our default parameters.
 
 After the network is finished, you can resize the maps to the original image size by
 
@@ -39,17 +42,19 @@ After the network is finished, you can resize the maps to the original image siz
 cd run/pascal
 python res.py
 ``` 
-Second, move the resized maps to the ```data/VOCdevkit/VOC2012/``` folder.
+2. Move the resized maps to the ```data/VOCdevkit/VOC2012/``` folder.
 
 Put the saliency maps to the ```data/VOCdevkit/VOC2012/``` folder, or you can run DSS model to generate saliency maps by yourself.
 
-Third, generate the pseudo labels of the training set by
+Generate the pseudo labels of the training set by
 
-```python gen_labels.py```
+```bash
+python gen_labels.py
+```
 
 ### Train the Semantic Segmentation Network
 
-+ Once the pseudo labels are generated, it can be used to train the semantic segmentation network.
+Once the pseudo labels are generated, it can be used to train the semantic segmentation network.
 
 ## The Results
 
