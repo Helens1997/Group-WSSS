@@ -17,9 +17,9 @@ from .util import initialize_weights
 
 model_urls = {'vgg16': 'https://download.pytorch.org/models/vgg16-397923af.pth'}
 
-class ADL(nn.Module):
+class GDL(nn.Module):
     def __init__(self, drop_rate=0.8, drop_th=0.7):
-        super(ADL, self).__init__()
+        super(GDL, self).__init__()
         if not (0 <= drop_rate <= 1):
             raise ValueError("drop-rate must be in range [0, 1].")
         if not (0 <= drop_th <= 1):
@@ -72,7 +72,7 @@ class CoattentionModel(nn.Module):
         self.extra_ConvGRU = ConvGRUCell(all_channel, all_channel, kernel_size=1)
         self.extra_conv_fusion = nn.Conv2d(all_channel*2, all_channel, kernel_size=3, padding=1, bias= True)
         self.extra_relu_fusion = nn.ReLU(inplace=True)
-        self.extra_ADL = ADL(kwargs['drop_rate'], kwargs['drop_th'])
+        self.extra_GDL = GDL(kwargs['drop_rate'], kwargs['drop_th'])
         self.softmax = nn.Sigmoid()
         self.propagate_layers = 3
 
@@ -131,9 +131,9 @@ class CoattentionModel(nn.Module):
                 h_v2 = self.extra_ConvGRU(attention2, query)
                 h_v3 = self.extra_ConvGRU(attention3, query1)
 
-                h_v1 = self.extra_ADL(h_v1)
-                h_v2 = self.extra_ADL(h_v2)
-                h_v3 = self.extra_ADL(h_v3)
+                h_v1 = self.extra_GDL(h_v1)
+                h_v2 = self.extra_GDL(h_v2)
+                h_v3 = self.extra_GDL(h_v3)
                 
                 exemplar = h_v1.clone()
                 query = h_v2.clone()
