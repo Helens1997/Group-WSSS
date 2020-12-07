@@ -36,21 +36,21 @@ In the paper, we use the most popular dataset for training. Here are the steps t
 
 1. Once the data is prepared, please run ```python train.py``` for training the classification network with our default parameters.
 
-After the network is finished, you can resize the maps to the original image size by
+    After the network is finished, you can resize the maps to the original image size by
 
-```bash
-cd run/pascal
-python res.py
-``` 
+    ```bash
+    cd run/pascal
+    python res.py
+    ``` 
 2. Move the resized maps to the ```data/VOCdevkit/VOC2012/``` folder.
 
-Put the saliency maps to the ```data/VOCdevkit/VOC2012/``` folder, or you can run DSS model to generate saliency maps by yourself.
+    Put the saliency maps to the ```data/VOCdevkit/VOC2012/``` folder, or you can run DSS model to generate saliency maps by yourself.
 
-Generate the pseudo labels of the training set by
+    Generate the pseudo labels of the training set by
 
-```bash
-python gen_labels.py
-```
+    ```bash
+    python gen_labels.py
+    ```
 
 ### Train the Semantic Segmentation Network
 
