@@ -6,7 +6,7 @@ This  is a PyTorch implementation of our model for weakly supervised semantic se
 
 The training experiments are conducted using PyTorch 1.4.0 with four NVIDIA RTX 2080Ti GPU with 11GB memory per card.
 
-+ Please install PyTorch 1.4.0 first
++ Please install PyTorch 1.4.0
 
 Other minor Python modules can be installed by running
 
@@ -14,7 +14,7 @@ Other minor Python modules can be installed by running
 pip install -r requirements.txt
 ``` 
 
-## Training
+## Train
 
 ### Clone
 ```git clone -- recursive https://github.com/Lixy1997/Group-WSSS```
@@ -43,14 +43,17 @@ python res.py
 
 + Run ```python gen_labels.py``` for generating pseudo labels of training set.
 
+### Train the Semantic Segmentation Network
+
++ Once the pseudo labels are generated, it can be used to train the semantic segmentation network.
 
 ## The Results
 
-1. The Class Activation Maps for our [group-wise semantic mining]().
+1. The Class Activation Maps for our group-wise semantic mining can be downloaded from [Google Drive]().
 
-2. The saliency maps used for proxy labels from [google drive](https://drive.google.com/file/d/1Ls2HBtg3jUiuk3WUuMtdUOVUFCgvE8IX/view).
+2. The saliency maps used for proxy labels are from [Google Drive](https://drive.google.com/file/d/1Ls2HBtg3jUiuk3WUuMtdUOVUFCgvE8IX/view).
 
-3. The segmentation results of val and test sets of PASCAL VOC 2012 dataset can be downloaded from [Google Drive]().
+3. The segmentation results of val and test sets of PASCAL VOC 2012 dataset can be downloaded from [Google Drive](https://drive.google.com/drive/folders/1l4gijmea9zDVt2VCwb-KuL6diit2T-zZ).
 For reproducing scores of the test set, please submit the results of test set to the [official website](http://host.robots.ox.ac.uk:8080/) following the requirements of the official website.
 
 
