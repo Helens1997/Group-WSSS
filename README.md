@@ -46,7 +46,7 @@ In the paper, we use the most popular dataset for training. Here are the steps t
 
     Put the saliency maps to the ```data/VOCdevkit/VOC2012/``` folder, or you can run DSS model to generate saliency maps by yourself.
 
-    Generate the pseudo labels of the training set by
+3. Generate the pseudo labels of the training set by
 
     ```bash
     python gen_labels.py
