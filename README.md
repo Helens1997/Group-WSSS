@@ -67,7 +67,7 @@ For reproducing scores of the test set, please submit the results of test set to
 
 
 ## Citation
-If you find group-wsss usefuf for your research, please consider citing the following paper:
+If you find group-wsss useful for your research, please consider citing the following paper:
 ```
 @inproceedings{li2021group,
  title = {Group-Wise Semantic Mining for Weakly Supervised Semantic Segmentation},
