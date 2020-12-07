@@ -29,9 +29,9 @@ pip install -r requirements.txt
 
 In the paper, we use PASCAL VOC 2012 for training. Here are the steps to prepare the data:
 
-+ Download the [PASCAL VOC 2012](https://drive.google.com/file/d/1uh5bWXvLOpE-WZUUtO77uwCB4Qnh6d7X/view) dataset.
+1. Download the [PASCAL VOC 2012](https://drive.google.com/file/d/1uh5bWXvLOpE-WZUUtO77uwCB4Qnh6d7X/view) dataset.
 
-+ Create soft links:
+2. Create soft links:
 
     ```cd data; ln -s your/path VOC2012;```
 
