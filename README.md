@@ -54,15 +54,15 @@ In the paper, we use the most popular dataset for training. Here are the steps t
 
 ### Train the Semantic Segmentation Network
 
-Once the pseudo labels are generated, it can be used to train the semantic segmentation network.
+Once the [pseudo labels](https://drive.google.com/file/d/1ICjerndySg5-KWbXFol9O8jmbyIz7by3/view?usp=sharing) are generated, it can be used to train the semantic segmentation network.
 
 ## The Results
 
 1. The Class Activation Maps for our group-wise semantic mining can be downloaded from [Google Drive](https://drive.google.com/drive/folders/1LkgKGtFP4_lCMnG2BxhzC7kcrBotog3O).
 
-2. The saliency maps used for proxy labels are from [Google Drive](https://drive.google.com/file/d/1Ls2HBtg3jUiuk3WUuMtdUOVUFCgvE8IX/view).
+2. The saliency maps used for pseudo labels are from [Google Drive](https://drive.google.com/file/d/1Ls2HBtg3jUiuk3WUuMtdUOVUFCgvE8IX/view).
 
-3. The segmentation results of val and test sets of PASCAL VOC 2012 dataset can be downloaded from [Google Drive](https://drive.google.com/drive/folders/1l4gijmea9zDVt2VCwb-KuL6diit2T-zZ).
+3. The segmentation results of val and test sets of PASCAL VOC 2012 dataset can be downloaded from [Google Drive](https://drive.google.com/file/d/1o7zqOwGKmUtR2VS5i30xLovIZI9vFm3b/view?usp=sharing).
 For reproducing scores of the test set, please submit the results of test set to the [official website](http://host.robots.ox.ac.uk:8080/) following the requirements of the official website.
 
 
