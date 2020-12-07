@@ -35,7 +35,7 @@ In the paper, we use PASCAL VOC 2012 for training. Here are the steps to prepare
 
     ```cd data; ln -s your/path VOC2012;```
 
-### Stage #1: Train the classification network group-wise semantic mining
+### Stage #1: Train the classification network for group-wise semantic mining
 
 1. Once the data is prepared, please run ```python train.py``` for training the classification network with our default parameters.
 
