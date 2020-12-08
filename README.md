@@ -57,7 +57,7 @@ In the paper, we use PASCAL VOC 2012 for training. Here are the steps to prepare
 
 ### Stage #2: Train the semantic segmentation network
 
-Once the pseudo labels are generated, they are employed to train the semantic segmentation network. We use Deeplab-v2 in all experiments. But most popular FCN-like segmentation networks can be used instead.  
+Once the [pseudo labels](https://drive.google.com/file/d/1ICjerndySg5-KWbXFol9O8jmbyIz7by3/view?usp=sharing) are generated, they are employed to train the semantic segmentation network. We use Deeplab-v2 in all experiments. But most popular FCN-like segmentation networks can be used instead.  
 
 ## Our Results
 
