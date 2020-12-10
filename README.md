@@ -2,7 +2,7 @@
 
 This  is a PyTorch implementation of our group-wise learning framework for weakly supervised semantic segmentation, which is accepted in AAAI 2021.
 
-**Group-Wise Semantic Mining for Weakly Supervised Semantic Segmentation.** [arXiv](http://arxiv.org/abs/2012.05007)
+**Group-Wise Semantic Mining for Weakly Supervised Semantic Segmentation.** [[arXiv](http://arxiv.org/abs/2012.05007)]
 
 *Xueyi Li, Tianfei Zhou, Jianwu Li, Yi Zhou and Zhaoxiang Zhang.* AAAI 2021.
 
