@@ -74,11 +74,11 @@ For reproducing scores of the test set, please submit the results of test set to
 ## Citation
 If you find this work useful for your research, please consider citing the following paper:
 ```
-@inproceedings{li2021group,
- title = {Group-Wise Semantic Mining for Weakly Supervised Semantic Segmentation},
- author = {Li, Xueyi and Zhou, Tianfei and Li, Jianwu and Zhou, Yi and Zhang, Zhaoxiang},
- booktitle={Proceedings of the 34th AAAI Conference on Artificial Intelligence (AAAI)},
- year = {2021},
+@article{li2020group,
+  title={Group-Wise Semantic Mining for Weakly Supervised Semantic Segmentation},
+  author={Li, Xueyi and Zhou, Tianfei and Li, Jianwu and Zhou, Yi and Zhang, Zhaoxiang},
+  journal={arXiv preprint arXiv:2012.05007},
+  year={2020}
 }
 ```
 
