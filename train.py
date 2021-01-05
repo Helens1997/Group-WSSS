@@ -57,7 +57,7 @@ def save_checkpoint(args, state, is_best, filename='checkpoint.pth.tar'):
         shutil.copyfile(savepath, os.path.join(args.snapshot_dir, 'model_best.pth.tar'))
 
 def get_model(args):
-    model = gnn.GNNNet_VGG(pretrained=True,drop_rate=args.drop_rate,drop_th=args.drop_th, num_classes=args.num_classes,att_dir=args.att_dir, training_epoch=args.epoch)
+    model = vgg_gnn.GNNNet_VGG(pretrained=True,drop_rate=args.drop_rate,drop_th=args.drop_th, num_classes=args.num_classes,att_dir=args.att_dir, training_epoch=args.epoch)
     device = torch.device(0)	
     model = torch.nn.DataParallel(model).cuda()
     model.to(device)
