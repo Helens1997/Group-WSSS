@@ -43,7 +43,7 @@ In the paper, we use PASCAL VOC 2012 for training. Here are the steps to prepare
 
     ```bash
     cd run/pascal
-    python res.py
+    python vis.py
     ``` 
 2. Move the resized maps to the ```data/VOCdevkit/VOC2012/``` folder.
 
