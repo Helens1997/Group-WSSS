@@ -1,5 +1,10 @@
 ## Group-Wise Semantic Mining for Weakly Supervised Semantic Segmentation
 
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/group-wise-semantic-mining-for-weakly/weakly-supervised-semantic-segmentation-on-1)](https://paperswithcode.com/sota/weakly-supervised-semantic-segmentation-on-1?p=group-wise-semantic-mining-for-weakly)
+	
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/group-wise-semantic-mining-for-weakly/weakly-supervised-semantic-segmentation-on)](https://paperswithcode.com/sota/weakly-supervised-semantic-segmentation-on?p=group-wise-semantic-mining-for-weakly)
+
+
 This  is a PyTorch implementation of our group-wise learning framework for weakly supervised semantic segmentation, which is accepted in AAAI 2021.
 
 **Group-Wise Semantic Mining for Weakly Supervised Semantic Segmentation.** [[arXiv](http://arxiv.org/abs/2012.05007)]
