@@ -130,7 +130,7 @@ class RandomHorizontalFlip():
             img = np.fliplr(img).copy()
         return img
 
-class CenterCrop()
+class CenterCrop():
     def __init__(self, cropsize, default_value=0):
         self.cropsize = cropsize
         self.default_value = default_value

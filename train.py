@@ -35,8 +35,8 @@ def get_arguments():
     parser.add_argument("--crop_size", type=int, default=224)
     parser.add_argument("--batch_size", type=int, default=1) 
     parser.add_argument("--dataset", type=str, default='pascal_voc')
-    parser.add_argument("--drop_rate",type=float,default=0.95)
-    parser.add_argument("--drop_th",type=float,default=0.9)
+    parser.add_argument("--drop_rate",type=float,default=0.8)
+    parser.add_argument("--drop_th",type=float,default=0.7)
     parser.add_argument("--decay_points", type=str, default='5,10')
     parser.add_argument("--snapshot_dir", type=str, default='runs/pascal/model')
     parser.add_argument("--att_dir", type=str, default='runs/pascal/feat')
@@ -106,15 +106,15 @@ def train(args):
             x11, x1, x22,x2, x33,x3 = model(img1, img2, img3, current_epoch, label1, index)
             index += 1
 
-            loss_train = 0.4 * (F.multilabel_soft_margin_loss(x11, label1) + F.multilabel_soft_margin_loss(x22, label2)
+            loss_train = (0.4 * (F.multilabel_soft_margin_loss(x11, label1) + F.multilabel_soft_margin_loss(x22, label2)
                     + F.multilabel_soft_margin_loss(x33, label3)) + (F.multilabel_soft_margin_loss(x1, label1)
-                    + F.multilabel_soft_margin_loss(x2, label2) + F.multilabel_soft_margin_loss(x3, label3))
+                    + F.multilabel_soft_margin_loss(x2, label2) + F.multilabel_soft_margin_loss(x3, label3)) ) / 6
 
             optimizer.zero_grad()
             loss_train.backward()
             optimizer.step()
 
-            losses.update(loss_train.data.item(), img.size()[0])
+            losses.update(loss_train.data.item(), img1.size()[0])
             batch_time.update(time.time() - end)
             end = time.time()
             
