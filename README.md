@@ -88,7 +88,7 @@ If you find this work useful for your research, please consider citing the follo
 }
 
 @article{zhou2022group,
-  title={Group-Wise Semantic Mining for Weakly Supervised Semantic Segmentation},
+  title={Group-Wise Learning for Weakly Supervised Semantic Segmentation},
   author={Zhou, Tianfei and Li, Liulei and Li, Xueyi and Feng, Chunmei and Li, Jianwu and Shao, Ling},
   journal={IEEE Transactions on Image Processing},
   year={2022}
