@@ -86,12 +86,5 @@ If you find this work useful for your research, please consider citing the follo
   pages={1984--1992},
   year={2021}
 }
-
-@article{zhou2022group,
-  title={Group-Wise Learning for Weakly Supervised Semantic Segmentation},
-  author={Zhou, Tianfei and Li, Liulei and Li, Xueyi and Feng, Chunmei and Li, Jianwu and Shao, Ling},
-  journal={IEEE Transactions on Image Processing},
-  year={2022}
-}
 ```
 
