@@ -7,9 +7,9 @@
 
 This  is a PyTorch implementation of our group-wise learning framework for weakly supervised semantic segmentation, which is accepted in AAAI-2021. The extended version has been accepted by IEEE TIP.
 
-**Group-Wise Semantic Mining for Weakly Supervised Semantic Segmentation.** [[arXiv](http://arxiv.org/abs/2012.05007)]
+**Group-Wise Learning for Weakly Supervised Semantic Segmentation.** [[Paper](https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=9652068)]
 
-*Xueyi Li, Tianfei Zhou, Jianwu Li, Yi Zhou and Zhaoxiang Zhang.* AAAI 2021.
+*Tianfei Zhou, Liulei Li, Xueyi Li, Chunmei Feng, Jianwu Li, and Ling Shao.* IEEE T-IP 2022.
 
 
 ## Prerequisites
@@ -88,11 +88,13 @@ If you find this work useful for your research, please consider citing the follo
 }
 ```
 ```
-@article{zhou2021group,
+@article{zhou2022group,
   title={Group-Wise Learning for Weakly Supervised Semantic Segmentation},
   author={Zhou, Tianfei and Li, Liulei and Li, Xueyi and Feng, Chun-Mei and Li, Jianwu and Shao, Ling},
   journal={IEEE Transactions on Image Processing},
-  year={2021},
+  year={2022},
+  volume={31},
+  pages={799-811},
   publisher={IEEE}
 }
 ```
