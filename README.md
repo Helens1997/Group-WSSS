@@ -1,16 +1,15 @@
 ## Group-Wise Semantic Mining for Weakly Supervised Semantic Segmentation
 
-[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/group-wise-semantic-mining-for-weakly/weakly-supervised-semantic-segmentation-on-1)](https://paperswithcode.com/sota/weakly-supervised-semantic-segmentation-on-1?p=group-wise-semantic-mining-for-weakly)
-	
-[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/group-wise-semantic-mining-for-weakly/weakly-supervised-semantic-segmentation-on)](https://paperswithcode.com/sota/weakly-supervised-semantic-segmentation-on?p=group-wise-semantic-mining-for-weakly)
-
 
 This  is a PyTorch implementation of our group-wise learning framework for weakly supervised semantic segmentation, which is accepted in AAAI-2021. The extended version has been accepted by IEEE TIP.
 
 **Group-Wise Learning for Weakly Supervised Semantic Segmentation.** [[Paper](https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=9652068)]
 
-*Tianfei Zhou, Liulei Li, Xueyi Li, Chunmei Feng, Jianwu Li, and Ling Shao.* IEEE T-IP 2022.
+*Tianfei Zhou, Liulei Li, Xueyi Li, Chunmei Feng, Jianwu Li, and Ling Shao.* AAAI 2021/IEEE TIP 2022.
 
+## News
+
+Our new paper for weakly supervised semantic segmentation has been accepted to CVPR 2022, with significantly improved performance. Please see [RCA](https://github.com/maeve07/RCA).
 
 ## Prerequisites
 
